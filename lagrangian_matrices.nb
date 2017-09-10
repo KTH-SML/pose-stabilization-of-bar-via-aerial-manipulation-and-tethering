@@ -1,0 +1,789 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     27270,        781]
+NotebookOptionsPosition[     26864,        763]
+NotebookOutlinePosition[     27203,        778]
+CellTagsIndexPosition[     27160,        775]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "L = K(v) + P(p)\nL = K(g\[CloseCurlyQuote][q].",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["q", "."], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") - P(g[q])\n\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      FractionBox["d", "dt"], 
+      FractionBox["d", 
+       RowBox[{"d", 
+        OverscriptBox["q", "."]}]], "L"}], "-", 
+     RowBox[{
+      FractionBox["d", "dq"], "L"}]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["d", "dt"], TraditionalForm]]],
+ "=",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["d", "dq"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["q", "."], TraditionalForm]]],
+ "+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["d", 
+     RowBox[{"d", 
+      OverscriptBox["q", "."]}]], 
+    OverscriptBox["q", ".."]}], TraditionalForm]]],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["d", "dt"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"K", "'"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"g", "'"}], "[", "q", "]"}], ".", 
+         FormBox[
+          OverscriptBox["q", "."],
+          TraditionalForm]}], ")"}], ".", 
+       RowBox[{
+        RowBox[{"g", "'"}], "[", "q", "]"}]}]}], "+", 
+     RowBox[{
+      RowBox[{"P", "'"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"g", "[", "q", "]"}], ")"}], ".", 
+       RowBox[{
+        RowBox[{"g", "'"}], "[", "q", "]"}]}]}]}], "=", "0"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"K", "''"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"g", "'"}], "[", "q", "]"}], ".", 
+         FormBox[
+          OverscriptBox["q", "."],
+          TraditionalForm]}], ")"}], ".", 
+       RowBox[{
+        RowBox[{"g", "'"}], "[", "q", "]"}], ".", 
+       OverscriptBox["q", ".."]}]}], " ", ")"}], ".", 
+    RowBox[{
+     RowBox[{"g", "'"}], "[", "q", "]"}]}], TraditionalForm]]],
+ "  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"K", "''"}], 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"g", "'"}], "[", "q", "]"}], ".", 
+                FormBox[
+                 OverscriptBox["q", "."],
+                 TraditionalForm]}], ")"}], ".", " ", 
+              RowBox[{
+               RowBox[{"g", "''"}], "[", "q", "]"}], ".", 
+              OverscriptBox["q", "."]}]}], ")"}], ".", 
+           FormBox[
+            OverscriptBox["q", "."],
+            TraditionalForm]}], ")"}], ".", 
+         RowBox[{
+          RowBox[{"g", "'"}], "[", "q", "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"K", "'"}], 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Dg", "[", "q", "]"}], ".", 
+            FormBox[
+             OverscriptBox["q", "."],
+             TraditionalForm]}], ")"}], ".", 
+          RowBox[{
+           RowBox[{"g", "''"}], "[", "q", "]"}]}]}]}], ")"}], 
+      OverscriptBox["q", "."]}], " ", "+", 
+     RowBox[{
+      RowBox[{"P", "'"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"g", "[", "q", "]"}], ")"}], ".", 
+       RowBox[{
+        RowBox[{"g", "'"}], "[", "q", "]"}]}]}]}], "=", "0"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", " ", "=", " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"g", "'"}], "[", "q", "]"}], ")"}], "T"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ".",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"K", "''"}], " ", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"g", "'"}], "[", "q", "]"}], ".", 
+       FormBox[
+        OverscriptBox["q", "."],
+        TraditionalForm]}], ")"}], ".", 
+     RowBox[{
+      RowBox[{"g", "'"}], "[", "q", "]"}]}]}], TraditionalForm]]],
+ "  \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"C", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"K", "''"}], 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"g", "'"}], "[", "q", "]"}], ".", 
+               FormBox[
+                OverscriptBox["q", "."],
+                TraditionalForm]}], ")"}], ".", " ", 
+             RowBox[{
+              RowBox[{"g", "''"}], "[", "q", "]"}], ".", 
+             OverscriptBox["q", "."]}]}], ")"}], ".", 
+          FormBox[
+           OverscriptBox["q", "."],
+           TraditionalForm]}], ")"}], ".", 
+        RowBox[{
+         RowBox[{"g", "'"}], "[", "q", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"K", "'"}], 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Dg", "[", "q", "]"}], ".", 
+           FormBox[
+            OverscriptBox["q", "."],
+            TraditionalForm]}], ")"}], ".", 
+         RowBox[{
+          RowBox[{"g", "''"}], "[", "q", "]"}]}]}]}]}], ")"}], 
+    OverscriptBox["q", "."]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"G", "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"P", "'"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"g", "[", "q", "]"}], ")"}], ".", 
+       RowBox[{
+        RowBox[{"g", "'"}], "[", "q", "]"}]}]}], "=", "0"}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\nNote that in most systems \
+K\[CloseCurlyQuote]\[CloseCurlyQuote]=constant and P\[CloseCurlyQuote] \
+constant functions\n"
+}], "Subsection",
+ CellChangeTimes->{{3.712252489410387*^9, 3.712252828119726*^9}, {
+  3.712252867889185*^9, 3.712252869464613*^9}, {3.7122529449854193`*^9, 
+  3.712253117011633*^9}, {3.712253180044537*^9, 3.712253188268929*^9}, {
+  3.7122532243586473`*^9, 3.712253262183807*^9}, {3.712253304267803*^9, 
+  3.712253356709181*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LagrangeMatrices", "[", "\[IndentingNewLine]", 
+   RowBox[{"dimq_", ",", 
+    RowBox[{"(*", 
+     RowBox[{"dimension", " ", "of", " ", "generalized", " ", "coordinates"}],
+      "*)"}], "\[IndentingNewLine]", "g_", ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "function", " ", "from", " ", "generalized", " ", "to", " ", "global", 
+      " ", "coordinates"}], "*)"}], "\[IndentingNewLine]", "Potential_", ",", 
+    
+    RowBox[{"(*", 
+     RowBox[{"potential", " ", "energz", " ", "function"}], "*)"}], 
+    "\[IndentingNewLine]", "Kinectic_"}], 
+   RowBox[{"(*", 
+    RowBox[{"kinectic", " ", "energz", " ", "function"}], "*)"}], 
+   "\[IndentingNewLine]", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"qq", "=", 
+       RowBox[{"Array", "[", 
+        RowBox[{"Slot", ",", "dimq"}], "]"}]}], ",", "\[IndentingNewLine]", 
+      "Dg", ",", "DDg", ",", "\[IndentingNewLine]", "p", ",", "v", ",", 
+      "\[IndentingNewLine]", "D1L", ",", "D2D2L", ",", "\[IndentingNewLine]", 
+      "MMatrix", ",", "CMatrix", ",", "GMatrix"}], "\[IndentingNewLine]", 
+     "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Dg", "=", 
+      RowBox[{
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"g", "[", "qq", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"qq", ",", "1"}], "}"}]}], "]"}], "]"}], "&"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"DDg", "=", 
+      RowBox[{
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"g", "[", "qq", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"qq", ",", "2"}], "}"}]}], "]"}], "]"}], "&"}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"p", "=", 
+      RowBox[{"Array", "[", 
+       RowBox[{"Slot", ",", 
+        RowBox[{"Length", "[", 
+         RowBox[{"g", "[", "qq", "]"}], "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"v", "=", 
+      RowBox[{"Array", "[", 
+       RowBox[{"Slot", ",", 
+        RowBox[{"Length", "[", 
+         RowBox[{"g", "[", "qq", "]"}], "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"L", "[", 
+         RowBox[{"p_", ",", "v_"}], "]"}], ":=", 
+        RowBox[{
+         RowBox[{"Kinectic", "[", "v", "]"}], "-", 
+         RowBox[{"Potential", "[", "p", "]"}]}]}], ";"}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"D1L", "=", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"Potential", "[", "p", "]"}], ",", 
+          RowBox[{"{", "p", "}"}]}], "]"}]}], "//", "Simplify"}]}], ";", 
+     RowBox[{"(*", 
+      RowBox[{
+      "this", " ", "should", " ", "not", " ", "depend", " ", "on", " ", "p"}],
+       "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"D2L", "=", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"D", "[", 
+           RowBox[{
+            RowBox[{"Kinectic", "[", "v", "]"}], ",", 
+            RowBox[{"{", "v", "}"}]}], "]"}], "&"}], "//", "Simplify"}]}], 
+       ";"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"D2D2L", "=", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"Kinectic", "[", "v", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"v", ",", "2"}], "}"}]}], "]"}], "//", "Simplify"}]}], ";", 
+     
+     RowBox[{"(*", 
+      RowBox[{
+      "this", " ", "does", " ", "not", " ", "depend", " ", "on", " ", "p", 
+       " ", "or", " ", "v"}], "*)"}], "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{"mass", " ", "matrix"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"MMatrix", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"(", 
+          RowBox[{"Dg", "@@", "#"}], ")"}], "]"}], ".", "D2D2L", ".", 
+        RowBox[{"(", 
+         RowBox[{"Dg", "@@", "#"}], ")"}]}], "&"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{"coriolis", " ", "term"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"CMatrix", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"(", 
+          RowBox[{"Dg", "@@", "#1"}], ")"}], "]"}], ".", "D2D2L", ".", 
+        RowBox[{"(", 
+         RowBox[{"DDg", "@@", "#1"}], ")"}], ".", "#2"}], "&"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{"gravity", " ", "term"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"GMatrix", "=", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"D1L", ".", 
+         RowBox[{"(", 
+          RowBox[{"Dg", "@@", "#1"}], ")"}]}]}], "&"}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"MMatrix", ",", "CMatrix", ",", "GMatrix"}], "}"}]}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{3.712252478948515*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LagrangeLinearization", "[", "\[IndentingNewLine]", 
+   RowBox[{"qEQ_", ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "equilibrium", " ", "of", " ", "generalized", " ", "coordinates"}], 
+     "*)"}], "\[IndentingNewLine]", "g_", ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "function", " ", "from", " ", "generalized", " ", "to", " ", "global", 
+      " ", "coordinates"}], "*)"}], "\[IndentingNewLine]", "Potential_", ",", 
+    
+    RowBox[{"(*", 
+     RowBox[{"potential", " ", "energz", " ", "function"}], "*)"}], 
+    "\[IndentingNewLine]", "Kinectic_", ",", 
+    RowBox[{"(*", 
+     RowBox[{"kinectic", " ", "energz", " ", "function"}], "*)"}], 
+    "\[IndentingNewLine]", "fu_", ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "function", " ", "that", " ", "maps", " ", "to", " ", "inputs", " ", 
+      "to", " ", 
+      RowBox[{"linear", "/", "angular"}], " ", "acceleration", " ", "on", " ",
+       "generalized", " ", "coordinates"}], "*)"}], "\[IndentingNewLine]", 
+    "u_"}], 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"input", ":", " ", "remark"}], ",", " ", 
+     RowBox[{
+     "onlz", " ", "the", " ", "dimension", " ", "of", " ", "this", " ", 
+      "vector", " ", "is", " ", "necessarz"}]}], "*)"}], 
+   "\[IndentingNewLine]", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"qeq", "=", "qEQ"}], ",", 
+      RowBox[{"(*", 
+       RowBox[{"equilibrium", " ", "q"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"qdeq", "=", 
+       RowBox[{"ConstantArray", "[", 
+        RowBox[{"0", ",", 
+         RowBox[{"Length", "[", "qEQ", "]"}]}], "]"}]}], ",", 
+      RowBox[{"(*", 
+       RowBox[{"equilibrium", " ", 
+        OverscriptBox["q", "."]}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"(*", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"qq", "=", 
+       RowBox[{"Array", "[", 
+        RowBox[{"Slot", ",", 
+         RowBox[{"Length", "[", "qEQ", "]"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"uu", "=", 
+       RowBox[{"Array", "[", 
+        RowBox[{"Slot", ",", 
+         RowBox[{"Length", "[", "u", "]"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", "MMatrix", ",", "MInvAtEq", ",", "DMMatrixAtEq", 
+      ",", "\[IndentingNewLine]", "GMatrix", ",", "GMatrixAtEq", ",", 
+      "DGMatrixAtEq", ",", "\[IndentingNewLine]", "CMatrix", ",", 
+      "CMatrixAtEq", ",", "\[IndentingNewLine]", "Adqd0", ",", "Adqd1", ",", 
+      "\[IndentingNewLine]", "AMatrix", ",", "\[IndentingNewLine]", "BMatrix",
+       ",", "ueq", ",", "DfuAteq", ",", "Bdqd0"}], "\[IndentingNewLine]", 
+     "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"MMatrix", ",", "CMatrix", ",", "GMatrix"}], "}"}], "=", 
+      RowBox[{"LagrangeMatrices", "[", 
+       RowBox[{
+        RowBox[{"Length", "[", "qeq", "]"}], ",", "g", ",", "Potential", ",", 
+        "Kinectic"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"MInvAtEq", "=", 
+      RowBox[{
+       RowBox[{"Inverse", "[", 
+        RowBox[{"MMatrix", "[", "qeq", "]"}], "]"}], "//", "Simplify"}]}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"DMMatrixAtEq", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"MMatrix", "[", "qq", "]"}], ",", 
+          RowBox[{"{", "qq", "}"}]}], "]"}], "/.", 
+        RowBox[{"Thread", "[", 
+         RowBox[{"qq", "\[Rule]", "qeq"}], "]"}]}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{"gravity", " ", "term"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"DGMatrixAtEq", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"GMatrix", "[", "qq", "]"}], ",", 
+          RowBox[{"{", "qq", "}"}]}], "]"}], "/.", 
+        RowBox[{"Thread", "[", 
+         RowBox[{"qq", "\[Rule]", "qeq"}], "]"}]}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"GMatrixAtEq", "=", 
+      RowBox[{
+       RowBox[{"GMatrix", "[", "qeq", "]"}], "//", "Simplify"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Adqd0", "=", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"MInvAtEq", ".", 
+         RowBox[{"(", 
+          RowBox[{"DGMatrixAtEq", "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"MInvAtEq", ".", "GMatrixAtEq"}], ")"}], ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"DMMatrixAtEq", ",", 
+              RowBox[{"{", 
+               RowBox[{"2", ",", "1", ",", "3"}], "}"}]}], "]"}]}]}], 
+          ")"}]}]}], "//", "Simplify"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"CMatrixAtEq", "=", 
+      RowBox[{"CMatrix", "[", 
+       RowBox[{"qeq", ",", "qdeq"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Adqd1", "=", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"MInvAtEq", ".", "CMatrixAtEq"}]}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"AMatrix", "=", 
+      RowBox[{"Join", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Join", "[", 
+         RowBox[{
+          RowBox[{"ConstantArray", "[", 
+           RowBox[{"0", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Length", "[", "qq", "]"}], ",", 
+              RowBox[{"Length", "[", "qq", "]"}]}], "}"}]}], "]"}], ",", 
+          RowBox[{"IdentityMatrix", "[", 
+           RowBox[{"Length", "[", "qq", "]"}], "]"}], ",", "2"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Join", "[", 
+         RowBox[{"Adqd0", ",", "Adqd1", ",", "2"}], "]"}]}], 
+       "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{"equilibrium", " ", "input"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"ueq", "=", 
+      RowBox[{"uu", "/.", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Solve", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"GMatrix", "[", "qeq", "]"}], "\[Equal]", 
+             RowBox[{"fu", "[", 
+              RowBox[{"qeq", ",", "uu"}], "]"}]}], ",", "uu"}], "]"}], "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "//", "Simplify"}], ")"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"DfuAteq", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Evaluate", "[", 
+         RowBox[{"D", "[", 
+          RowBox[{
+           RowBox[{"fu", "[", 
+            RowBox[{"qeq", ",", "uu"}], "]"}], ",", 
+           RowBox[{"{", "uu", "}"}]}], "]"}], "]"}], "/.", 
+        RowBox[{"Thread", "[", 
+         RowBox[{"uu", "\[Rule]", "ueq"}], "]"}]}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", 
+     RowBox[{"Bdqd0", "=", 
+      RowBox[{
+       RowBox[{"MInvAtEq", ".", "DfuAteq"}], "//", "Simplify"}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"BMatrix", "=", 
+      RowBox[{"Join", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"ConstantArray", "[", 
+         RowBox[{"0", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Length", "[", "qq", "]"}], ",", 
+            RowBox[{"Length", "[", "uu", "]"}]}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "Bdqd0"}], "\[IndentingNewLine]", "]"}]}], ";",
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"AMatrix", ",", "BMatrix"}], "}"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7122524701526327`*^9, 3.7122524816610107`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LagrangeLinearizationClosedLoop", "[", "\[IndentingNewLine]", 
+   RowBox[{"qEQ_", ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "equilibrium", " ", "of", " ", "generalized", " ", "coordinates"}], 
+     "*)"}], "\[IndentingNewLine]", "g_", ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "function", " ", "from", " ", "generalized", " ", "to", " ", "global", 
+      " ", "coordinates"}], "*)"}], "\[IndentingNewLine]", "Potential_", ",", 
+    
+    RowBox[{"(*", 
+     RowBox[{"potential", " ", "energz", " ", "function"}], "*)"}], 
+    "\[IndentingNewLine]", "Kinectic_", ",", 
+    RowBox[{"(*", 
+     RowBox[{"kinectic", " ", "energz", " ", "function"}], "*)"}], 
+    "\[IndentingNewLine]", "fu_"}], 
+   RowBox[{"(*", 
+    RowBox[{
+    "function", " ", "that", " ", "maps", " ", "to", " ", "inputs", " ", "to",
+      " ", 
+     RowBox[{"linear", "/", "angular"}], " ", "acceleration", " ", "on", " ", 
+     "generalized", " ", "coordinates"}], "*)"}], "\[IndentingNewLine]", 
+   "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"qeq", "=", "qEQ"}], ",", 
+      RowBox[{"(*", 
+       RowBox[{"equilibrium", " ", "q"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"qdeq", "=", 
+       RowBox[{"ConstantArray", "[", 
+        RowBox[{"0", ",", 
+         RowBox[{"Length", "[", "qEQ", "]"}]}], "]"}]}], ",", 
+      RowBox[{"(*", 
+       RowBox[{"equilibrium", " ", 
+        OverscriptBox["q", "."]}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"(*", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"qq", "=", 
+       RowBox[{"Array", "[", 
+        RowBox[{"Slot", ",", 
+         RowBox[{"Length", "[", "qEQ", "]"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"qqd", "=", 
+       RowBox[{"Array", "[", 
+        RowBox[{"Slot", ",", 
+         RowBox[{"Length", "[", "qEQ", "]"}], ",", 
+         RowBox[{
+          RowBox[{"Length", "[", "qEQ", "]"}], "+", "1"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", "MMatrix", ",", "MInvAtEq", ",", "DMMatrixAtEq", 
+      ",", "\[IndentingNewLine]", "GMatrix", ",", "GMatrixAtEq", ",", 
+      "DGMatrixAtEq", ",", "\[IndentingNewLine]", "CMatrix", ",", 
+      "CMatrixAtEq", ",", "\[IndentingNewLine]", "Adqd0", ",", "Adqd1", ",", 
+      "\[IndentingNewLine]", "AMatrix", ",", "\[IndentingNewLine]", "BMatrix",
+       ",", "ueq", ",", "DfuAteq", ",", "Bdqd0"}], "\[IndentingNewLine]", 
+     "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"MMatrix", ",", "CMatrix", ",", "GMatrix"}], "}"}], "=", 
+      RowBox[{"LagrangeMatrices", "[", 
+       RowBox[{
+        RowBox[{"Length", "[", "qeq", "]"}], ",", "g", ",", "Potential", ",", 
+        "Kinectic"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"MInvAtEq", "=", 
+      RowBox[{
+       RowBox[{"Inverse", "[", 
+        RowBox[{"MMatrix", "[", "qeq", "]"}], "]"}], "//", "Simplify"}]}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"DMMatrixAtEq", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"MMatrix", "[", "qq", "]"}], ",", 
+          RowBox[{"{", "qq", "}"}]}], "]"}], "/.", 
+        RowBox[{"Thread", "[", 
+         RowBox[{"qq", "\[Rule]", "qeq"}], "]"}]}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{"gravity", " ", "term"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"DGMatrixAtEq", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"GMatrix", "[", "qq", "]"}], ",", 
+          RowBox[{"{", "qq", "}"}]}], "]"}], "/.", 
+        RowBox[{"Thread", "[", 
+         RowBox[{"qq", "\[Rule]", "qeq"}], "]"}]}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"GMatrixAtEq", "=", 
+      RowBox[{
+       RowBox[{"GMatrix", "[", "qeq", "]"}], "//", "Simplify"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Adqd0", "=", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"MInvAtEq", ".", 
+         RowBox[{"(", 
+          RowBox[{"DGMatrixAtEq", "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"MInvAtEq", ".", "GMatrixAtEq"}], ")"}], ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"DMMatrixAtEq", ",", 
+              RowBox[{"{", 
+               RowBox[{"2", ",", "1", ",", "3"}], "}"}]}], "]"}]}]}], 
+          ")"}]}]}], "//", "Simplify"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"CMatrixAtEq", "=", 
+      RowBox[{"CMatrix", "[", 
+       RowBox[{"qeq", ",", "qdeq"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Adqd1", "=", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"MInvAtEq", ".", "CMatrixAtEq"}]}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"AMatrix", "=", 
+      RowBox[{"Join", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Join", "[", 
+         RowBox[{
+          RowBox[{"ConstantArray", "[", 
+           RowBox[{"0", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Length", "[", "qq", "]"}], ",", 
+              RowBox[{"Length", "[", "qq", "]"}]}], "}"}]}], "]"}], ",", 
+          RowBox[{"IdentityMatrix", "[", 
+           RowBox[{"Length", "[", "qq", "]"}], "]"}], ",", "2"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Join", "[", 
+         RowBox[{"Adqd0", ",", "Adqd1", ",", "2"}], "]"}]}], 
+       "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"DfuAteq", "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Join", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Evaluate", "[", 
+           RowBox[{"D", "[", 
+            RowBox[{
+             RowBox[{"fu", "[", 
+              RowBox[{"qq", ",", "qqd"}], "]"}], ",", 
+             RowBox[{"{", "qq", "}"}]}], "]"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Evaluate", "[", 
+           RowBox[{"D", "[", 
+            RowBox[{
+             RowBox[{"fu", "[", 
+              RowBox[{"qq", ",", "qqd"}], "]"}], ",", 
+             RowBox[{"{", "qqd", "}"}]}], "]"}], "]"}], ",", 
+          "\[IndentingNewLine]", "2"}], "\[IndentingNewLine]", "]"}], "/.", 
+        RowBox[{"Thread", "[", 
+         RowBox[{"qq", "\[Rule]", " ", "qeq"}], "]"}]}], "/.", 
+       RowBox[{"Thread", "[", 
+        RowBox[{"qqd", "\[Rule]", " ", "qdeq"}], "]"}]}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"BMatrix", "=", 
+      RowBox[{"Join", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"ConstantArray", "[", 
+         RowBox[{"0", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Length", "[", "qq", "]"}], ",", 
+            RowBox[{"2", 
+             RowBox[{"Length", "[", "qq", "]"}]}]}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"MInvAtEq", ".", "DfuAteq"}]}], "\[IndentingNewLine]", 
+       "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"AMatrix", "+", "BMatrix"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input"]
+}, Open  ]]
+},
+WindowSize->{1920, 1056},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 6299, 227, 470, "Subsection"],
+Cell[6882, 251, 5038, 137, 759, "Input"],
+Cell[11923, 390, 7663, 190, 1197, "Input"],
+Cell[19589, 582, 7259, 178, 1195, "Input"]
+}, Open  ]]
+}
+]
+*)
+
